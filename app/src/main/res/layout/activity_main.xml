@@ -1,0 +1,32 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_vertical"  >
+
+    <USES-PERMISSION android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <USES-PERMISSION android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <DatePicker
+        android:id="@+id/datePicker1"
+        android:layout_width="wrap_content"
+        android:layout_height="400dp"
+        android:layout_marginLeft="30dp"
+        android:calendarViewShown="false" />
+
+    <EditText
+        android:id="@+id/edtDiary"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="#4DBCCA"
+        android:inputType="none"
+        android:lines="8" />
+
+    <Button
+        android:id = "@+id/btnWrite"
+        android:enabled="false"
+        android:text="Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
